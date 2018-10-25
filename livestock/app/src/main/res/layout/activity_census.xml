@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saidimu.livestock.CensusActivity">
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="YY/MM/DD"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/bulls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="No  of Bulls"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/cows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bulls"
+        android:layout_alignRight="@+id/bulls"
+        android:layout_below="@+id/bulls"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="No of Cows"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/mcalves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cows"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="No of Male Calves"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/fcalves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mcalves"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="No of Female Calves"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/steers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fcalves"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="No of Steers"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/heifers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/steers"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="No of Heifers"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/save2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:layout_below="@+id/heifers"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heifers"
+        android:text="REPORT" />
+</android.widget.RelativeLayout>
